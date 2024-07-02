@@ -16,6 +16,13 @@ h2 {
     color: #f5f5f5;
 }
 
+#regras {
+    font-size: 3.4rem;
+    color: #f5f5f5;
+    margin-top: 25px;
+    text-align: center;
+}
+
 @keyframes piscar {
     0% {
         color: #f5f5f5;
@@ -99,4 +106,114 @@ h2 {
 
 #copas, #espada, #ouro {
     display: none;
+}
+
+#copasBottom {
+    position: absolute;
+    right: 70%;
+    top: 258px;
+}
+
+#espadaBottom {
+    position: absolute;
+    right: 39%;
+    top: 258px;
+}
+
+#ouroBottom {
+    position: absolute;
+    right: 9%;
+    top: 258px;
+}
+
+@media (min-width: 320px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    #copasBottom, #espadaBottom, #ouroBottom {
+        display: none;
+    }
+
+    #espadaBottom {
+        position: absolute;
+        right: 41%;
+        top: 258px;
+    }
+    
+    #ouroBottom {
+        position: absolute;
+        right: 11%;
+        top: 258px;
+    }
+}
+
+@media (min-width: 522px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    #container {
+        height: 100%;
+    }
+
+    #cards {
+        display: flex;
+    }
+
+    #card-one, #card-two, #card-three {
+        background-image: url(../cardback.jpg);
+        height: 270px;
+        background-size: cover;
+        border-radius: 7px;
+        width: 50%;
+    }
+
+    .fa-heart {
+        font-size: 3.2rem;
+        margin: 5px 0 0 10px;
+        color: #b22222;
+    }
+    
+    .icone {
+        display: none;
+    }
+    
+    .spade {
+        font-size: 3.2rem;
+        margin: 5px 0 0 10px;
+    }
+    
+    .fa-diamond {
+        font-size: 3.2rem;
+        margin: 5px 0 0 10px;
+        color: #b22222;
+    }
+    
+    .cardOne, .cardTwo, .cardThree {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 4.2rem;
+        font-weight: bold;
+    }
+
+    #copasBottom {
+        position: absolute;
+        right: 70%;
+        top: 300px;
+    }
+    
+    #espadaBottom {
+        position: absolute;
+        right: 38%;
+        top: 300px;
+    }
+    
+    #ouroBottom {
+        position: absolute;
+        right: 7%;
+        top: 300px;
+    }
+
 }

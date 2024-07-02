@@ -6,6 +6,9 @@ const cardThreeBack = document.getElementById("card-three");
 const iconeCopas = document.getElementById("copas");
 const iconeEspada = document.getElementById("espada");
 const iconeOuro = document.getElementById("ouro");
+const copasBottom = document.getElementById("copasBottom");
+const espadaBottom = document.getElementById("espadaBottom");
+const ouroBottom = document.getElementById("ouroBottom");
 
 const cardOne = document.querySelector(".cardOne");
 const cardTwo = document.querySelector(".cardTwo");
@@ -16,7 +19,7 @@ const cards = document.getElementById("cards");
 const winner = document.createElement("h2");
 winner.textContent = "Parabéns você ganhou!";
 
-alert("Vamos tentar a sorte?\nA regra é simples tire um A e ganhe");
+const regras = document.getElementById("regras");
 
 cardOneBack.addEventListener("click", function () {
     cardOneBack.style.backgroundImage = "none";
@@ -40,11 +43,16 @@ cardOneBack.addEventListener("click", function () {
     iconeOuro.style.display = "block";
     cardThree.textContent = cartas[cartaAleatoria()];
 
+    copasBottom.style.display = "block";
+    espadaBottom.style.display = "block";
+    ouroBottom.style.display = "block";
+
     switch(cardOne.textContent) {
         case "J":
             setTimeout(() => {
                 winner.textContent = "Que pena não foi dessa vez!";
                 cards.style.display = "none";
+                regras.style.display = "none";
                 container.appendChild(winner);
                 document.body.appendChild(container);
 
@@ -58,6 +66,7 @@ cardOneBack.addEventListener("click", function () {
             setTimeout(() => {
                 winner.textContent = "Que pena não foi dessa vez!";
                 cards.style.display = "none";
+                regras.style.display = "none";
                 container.appendChild(winner);
                 document.body.appendChild(container);
 
@@ -71,6 +80,8 @@ cardOneBack.addEventListener("click", function () {
             setTimeout(() => {
                 winner.textContent = "Que pena não foi dessa vez!";                    cards.style.display = "none";
                 container.appendChild(winner);
+                cards.style.display = "none";
+                regras.style.display = "none";
                 document.body.appendChild(container);
     
                 setTimeout(() => {
@@ -82,6 +93,7 @@ cardOneBack.addEventListener("click", function () {
         default: 
             setTimeout(() => {
                 cards.style.display = "none";
+                regras.style.display = "none";
                 container.appendChild(winner);
                 document.body.appendChild(container);
 
@@ -114,11 +126,16 @@ cardTwoBack.addEventListener("click", function () {
     iconeOuro.style.display = "block";
     cardThree.textContent = cartas[cartaAleatoria()];
 
+    copasBottom.style.display = "block";
+    espadaBottom.style.display = "block";
+    ouroBottom.style.display = "block";
+
     switch(cardTwo.textContent) {
         case "J":
             setTimeout(() => {
                 winner.textContent = "Que pena não foi dessa vez!";
                 cards.style.display = "none";
+                regras.style.display = "none";
                 container.appendChild(winner);
                 document.body.appendChild(container);
 
@@ -132,6 +149,7 @@ cardTwoBack.addEventListener("click", function () {
             setTimeout(() => {
                 winner.textContent = "Que pena não foi dessa vez!";
                 cards.style.display = "none";
+                regras.style.display = "none";
                 container.appendChild(winner);
                 document.body.appendChild(container);
 
@@ -144,6 +162,8 @@ cardTwoBack.addEventListener("click", function () {
         case "Q":
             setTimeout(() => {
                 winner.textContent = "Que pena não foi dessa vez!";                    cards.style.display = "none";
+                cards.style.display = "none";
+                regras.style.display = "none";
                 container.appendChild(winner);
                 document.body.appendChild(container);
     
@@ -156,6 +176,7 @@ cardTwoBack.addEventListener("click", function () {
         default: 
             setTimeout(() => {
                 cards.style.display = "none";
+                regras.style.display = "none";
                 container.appendChild(winner);
                 document.body.appendChild(container);
 
@@ -188,11 +209,16 @@ cardThreeBack.addEventListener("click", function () {
     iconeOuro.style.display = "block";
     cardThree.textContent = cartas[cartaAleatoria()];
 
+    copasBottom.style.display = "block";
+    espadaBottom.style.display = "block";
+    ouroBottom.style.display = "block";
+
     switch(cardThree.textContent) {
         case "J":
             setTimeout(() => {
                 winner.textContent = "Que pena não foi dessa vez!";
                 cards.style.display = "none";
+                regras.style.display = "none";
                 container.appendChild(winner);
                 document.body.appendChild(container);
 
@@ -206,6 +232,7 @@ cardThreeBack.addEventListener("click", function () {
             setTimeout(() => {
                 winner.textContent = "Que pena não foi dessa vez!";
                 cards.style.display = "none";
+                regras.style.display = "none";
                 container.appendChild(winner);
                 document.body.appendChild(container);
 
@@ -219,6 +246,8 @@ cardThreeBack.addEventListener("click", function () {
             setTimeout(() => {
                 winner.textContent = "Que pena não foi dessa vez!";                    cards.style.display = "none";
                 container.appendChild(winner);
+                cards.style.display = "none";
+                regras.style.display = "none";
                 document.body.appendChild(container);
     
                 setTimeout(() => {
@@ -230,6 +259,7 @@ cardThreeBack.addEventListener("click", function () {
         default: 
             setTimeout(() => {
                 cards.style.display = "none";
+                regras.style.display = "none";
                 container.appendChild(winner);
                 document.body.appendChild(container);
 
