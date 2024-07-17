@@ -60,7 +60,7 @@ cardOneBack.addEventListener("click", function () {
                     location.reload();
                 }, 1000);
 
-            }, 1000);
+            }, 2000);
             break;
         case "K":
             setTimeout(() => {
